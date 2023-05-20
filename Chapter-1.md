@@ -15,3 +15,12 @@ To create a new file, you can input "code <name>.c into the terminal"
 The first line of the code tells the compiler that you'd like to use the library called *stdio.h*. This allows you to use the printf function.
 
 The \n on the print line creates a new line after the command is run.
+
+ ## Variables
+ You can assign value to a variable from an input.
+ 
+ ```
+ string answer = get_string("what's your name? ");
+ 
+ ```
+ The function get_string will take your input as the return value. Then the (=) will assign that value to the variable *answer* as a string.
