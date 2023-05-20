@@ -68,3 +68,10 @@ int main(void)
     }
 }
  ```
+### Forever/Continuous While Loop
+```
+while (true)
+{
+    printf("meow\n")
+{
+```                          
