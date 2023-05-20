@@ -11,3 +11,6 @@ To create a new file, you can input "code <name>.c into the terminal"
   {
     printf("hello, world\n");
   }
+```
+The first line of the code tells the compiler that you'd like to use the library called *stdio.h*. This allows you to use the printf function.
+The \n on the print line creates a new line after the command is run.
