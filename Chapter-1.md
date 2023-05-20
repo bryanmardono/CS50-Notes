@@ -16,11 +16,22 @@ The first line of the code tells the compiler that you'd like to use the library
 
 The \n on the print line creates a new line after the command is run.
 
- ## Variables
- You can assign value to a variable from an input.
+### Variables
+You can assign value to a variable from an input.
  
- ```
- string answer = get_string("what's your name? ");
+```
+string answer = get_string("what's your name? ");
+```
+The function get_string will take your input as the return value. Then the (=) will assign that value to the variable *answer* as a string.
+
+Applying this to the Hello World,
+
+```
+  #include <cs50.h>
+  #include <stdio.h>
  
- ```
- The function get_string will take your input as the return value. Then the (=) will assign that value to the variable *answer* as a string.
+  int main(void)
+  {
+     string answer = get_string("What's your name? ");
+     printf("hello, %s\n", answer);
+  }
