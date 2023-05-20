@@ -37,3 +37,20 @@ Applying this to the Hello World,
   }
 ```
 %s is a placeholder telling the compiler that it should get a string to plug in there.
+
+ ### While Loop
+ 
+ ```
+#include <stdio.h>
+#include <cs50.h>
+
+int main(void)
+{
+    int i=0;
+    while (i < 3)
+    {
+        printf("meow\n");
+        i+=1;
+    }
+}
+ ```
