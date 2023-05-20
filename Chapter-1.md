@@ -35,4 +35,5 @@ Applying this to the Hello World,
      string answer = get_string("What's your name? ");
      printf("hello, %s\n", answer);
   }
+```
 %s is a placeholder telling the compiler that it should get a string to plug in there.
