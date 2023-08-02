@@ -122,4 +122,4 @@ Format: rm [target file]
 #### rmdir (remove directory)
 
 ### Mario 
-!Mario https://github.com/bryanmardono/CS50-Notes/blob/main/image_2023-08-02_185859016.png
+![mario](https://github.com/bryanmardono/CS50-Notes/assets/102572030/83c8050c-b662-445f-8d93-0b7728fea6f4)
