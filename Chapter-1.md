@@ -197,8 +197,12 @@ int main(void)
 ```
 #include <stdio.h>
 #include <cs50.h>
+
+int get_size(void);
+void print_grid(int n);
 ```
-### main function
+C reads code from top to bottom. By pasting the first line of each function, it tells the compiler that the function will exist in the later portion of the code.
+#### Main function
 ```
 int main(void)
 {
@@ -206,7 +210,8 @@ int main(void)
     print_grid(n);
 }
 ```
-### function to get size of grid
+#### Function to get size of grid
+The function get_size does not take any input (void) but will return an output in the form on an integer.
 ```
 int get_size(void)
 { 
@@ -219,9 +224,10 @@ int get_size(void)
     return n;
 }
 ```
-### function to print grid
+#### Function to print grid
+The function print_grid takes the input n (which is an integer) but does not return an output.
 ```
-void print_grid(int n);
+void print_grid(int n)
 {
     for (int i = 0, i < n; i++)
     {
