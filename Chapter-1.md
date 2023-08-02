@@ -197,14 +197,17 @@ int main(void)
 ```
 #include <stdio.h>
 #include <cs50.h>
-
-//main function
+```
+main function
+```
 int main(void)
 {
     int n = get_size();
     print_grid(n);
 }
-//function to get size of grid
+```
+function to get size of grid
+```
 int get_size(void)
 { 
     int n;
@@ -215,7 +218,9 @@ int get_size(void)
     while (n<1);
     return n;
 }
-
+```
+function to print grid
+```
 void print_grid(int n);
 {
     for (int i = 0, i < n; i++)
