@@ -106,7 +106,7 @@ int get_size(void)
 ```
 ### Command Line Interface (CLI)
 #### cd (change directory) : ]
-Format: cd *target folder*/
+Format: cd [target folder]/
 cd ./ : stay in current directory
 cd ../ : move to previous (parent) directory
 cd / : move to root directory
@@ -115,11 +115,11 @@ cd : move to user's home directory
 #### cp (copy) :
 #### ls (list) : list all of the files in the current folder
 #### mv (move) : moves (pastes over) current file into target file. can be used for renaming files
-Format: mv *current file* *target file*
+Format: mv [current file] [target file]
 #### mkdir (make directory)
 #### rm (remove)
-Format: rm *target file*
+Format: rm [target file]
 #### rmdir (remove directory)
 
 ### Mario 
-![Alt text]https://github.com/bryanmardono/CS50-Notes/blob/main/image_2023-08-02_185859016.png
+!Mario https://github.com/bryanmardono/CS50-Notes/blob/main/image_2023-08-02_185859016.png
