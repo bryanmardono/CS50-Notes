@@ -198,7 +198,7 @@ int main(void)
 #include <stdio.h>
 #include <cs50.h>
 ```
-main function
+### main function
 ```
 int main(void)
 {
@@ -206,7 +206,7 @@ int main(void)
     print_grid(n);
 }
 ```
-function to get size of grid
+### function to get size of grid
 ```
 int get_size(void)
 { 
@@ -219,7 +219,7 @@ int get_size(void)
     return n;
 }
 ```
-function to print grid
+### function to print grid
 ```
 void print_grid(int n);
 {
