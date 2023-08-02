@@ -122,4 +122,109 @@ Format: rm [target file]
 #### rmdir (remove directory)
 
 ### Mario 
-![mario](https://github.com/bryanmardono/CS50-Notes/assets/102572030/83c8050c-b662-445f-8d93-0b7728fea6f4)
+![mario](https://github.com/bryanmardono/CS50-Notes/assets/102572030/0aab4f68-1391-404e-a5e2-756de865560b)
+
+#### How to create a repeating (?)
+```
+#include <stdio.h>
+
+int main(void)
+{
+    for (int i = 0, i < 4; i++)
+    {
+        printf ("????");
+    }
+    printf ("\n");
+}
+```
+![mario 2](https://github.com/bryanmardono/CS50-Notes/assets/102572030/40ab1519-afa8-484e-8629-329d0fd79ddc)
+```
+#include <stdio.h>
+
+int main(void)
+{
+    for (int i = 0, i < 3; i++)
+    {
+        printf ("#\n");
+    }
+}
+```   
+![S51bc3e6ba29f4ed1aea2209e7b882888j jpg_640x640Q90](https://github.com/bryanmardono/CS50-Notes/assets/102572030/48ec9670-095b-423f-864b-b40b42e70a02)
+### Using nested loops
+```
+#include <stdio.h>
+
+int main(void)
+{
+    const int n = 3
+    for (int i = 0, i < n; i++)
+    {
+        for (int j = 0, j < n; j++)
+        {
+            printf ("#");
+        }
+        printf ("\n");
+    }
+}
+```
+*const* causes the integer n to not be changeable by other commands following the first statement of n. It allows you to make less mistake.
+
+### Do While Loops
+```
+#include <stdio.h>
+#include <cs50.h>
+
+int main(void)
+{
+    int n;
+    do
+    {
+        n = get_int("Size : ");
+    }
+    while (n<1);
+
+    for (int i = 0, i < n; i++)
+    {
+        for (int j = 0, j < n; j++)
+        {
+            printf ("#");
+        }
+        printf ("\n");
+    }
+}
+```
+### Creating a function
+```
+#include <stdio.h>
+#include <cs50.h>
+
+//main function
+int main(void)
+{
+    int n = get_size();
+    print_grid(n);
+}
+//function to get size of grid
+int get_size(void)
+{ 
+    int n;
+    do
+    {
+        n = get_int("Size : ");
+    }
+    while (n<1);
+    return n;
+}
+
+void print_grid(int n);
+{
+    for (int i = 0, i < n; i++)
+    {
+        for (int j = 0, j < n; j++)
+        {
+            printf ("#");
+        }
+        printf ("\n");
+    }
+}
+```
