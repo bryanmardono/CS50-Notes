@@ -43,3 +43,25 @@ int main(void)
     printf("Average: %f\n", (scores[0] + scores[1] + scores[2])/ (float) 3);
 }
 ```
+The command "int scores[3]" creates an array called scores with space for 3 *scores* inside it./
+
+But inputting the scores one by one and having to do it by changing the source code is inefficient. Therefore, the code can further be optimized into
+```
+#include <stdio.h>
+#include <cs50.h>
+
+int main(void)
+{
+    int scores[3];
+
+    for (int i = 0; i<3; i++)
+    {
+        scores[i] = get_int("Scores:");
+    }
+
+    float avg = (float) (scores[0]+scores[1]+scores[2])/3;
+
+    printf ("Average : %f\n", avg);
+}
+```
+The for loop lets us to obtain 3 values of scores without repeating ourselves on the code.
