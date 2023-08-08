@@ -65,3 +65,34 @@ int main(void)
 }
 ```
 The for loop lets us to obtain 3 values of scores without repeating ourselves on the code.
+
+### Using a function that takes array as an input
+```
+#include <stdio.h>
+#include <cs50.h>
+
+const int n = 3;
+float average(int array[]);
+
+int main(void)
+{
+    int scores[n];
+    for (int i = 0; i<n; i++)
+    {
+        scores[i] = get_int("Scores:");
+    }
+
+    printf ("Average : %f\n", average(scores));
+}
+
+float average(int array[])
+{
+    float sum = 0;
+    for (int i = 0; i < n; i++)
+    {
+        sum += array[i];
+    }
+    return sum / n;
+}
+```
+First, the size of the array (n) is declared as a global variable. The function *main* will take in the scores input from the user, then print the output from the function *average*. The function *average* takes array as an input and returns a float as the output. By implementing the global variable n, the size of the array can be changed dynamically throughout the whole code.
