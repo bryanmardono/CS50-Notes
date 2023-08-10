@@ -243,6 +243,7 @@ int main(void)
     print_grid(n);
 }
 ```
+The main function is basically telling the compiler to run the function *get_size* to get n, then run the function *print_grid* using the n obtained.
 #### Function to get size of grid
 The function get_size does not take any input (void) but will return an output in the form on an integer.
 ```
