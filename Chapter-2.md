@@ -95,4 +95,5 @@ float average(int array[])
     return sum / n;
 }
 ```
-First, the size of the array (n) is declared as a global variable. The function *main* will take in the scores input from the user, then print the output from the function *average*. The function *average* takes array as an input and returns a float as the output. By implementing the global variable n, the size of the array can be changed dynamically throughout the whole code.
+First, the size of the array (n) is declared as a global variable. The function *main* will take in the scores input from the user, pass it as an input to *average*, then print the output from the function *average*. The function *average* takes the array (of scores) as an input and returns a float (average score) as the output. By implementing the global variable n, the size of the array can be changed dynamically throughout the whole code./
+When the function *average* is run, the array[] is replaced by the score[] obtained from the user. This means that as the function *main* is running, when it reaches the line of printing, it jumps to the function *average* to obtain the value of average score.
