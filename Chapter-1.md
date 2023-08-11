@@ -38,6 +38,46 @@ Applying this to the Hello World,
 ```
 %s is a placeholder telling the compiler that it should get a string to plug in there.
 
+### Conditionals
+```
+#include <stdio.h>
+#include <cs50.h>
+
+int main(void)
+{
+    int x = get_int("Value of x: ");
+    int y = get_int("Value of y: ");
+
+    if (x<y)
+    {
+        printf("x is less than y\n");
+    }
+}
+```
+```
+#include <cs50.h>
+#include <stdio.h>
+
+int main(void)
+{
+    // Prompt user to agree
+    char c = get_char("Do you agree? ");
+
+    // Check whether agreed
+    if (c == 'Y' || c == 'y')
+    {
+        printf("Agreed.\n");
+    }
+    else if (c == 'N' || c == 'n')
+    {
+        printf("Not agreed.\n");
+    }
+}
+```
+== ensures that something is equal, while || means or.
+
+
+
  ### While Loop
  
  ```
