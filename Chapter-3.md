@@ -84,4 +84,31 @@ https://cs50.harvard.edu/x/2023/notes/3/
 
 ### Recursion
 Recursion is a concept in programming where a function calls upon itself.
+```
+#include <cs50.h>
+#include <stdio.h>
 
+int main(void)
+{
+    int height = get_int("Height: ");
+    draw(height);
+}
+
+//draw pyramid from bottom to top
+void draw (int n)
+{
+    if (n <= 0)
+    {
+        return;
+    }
+    
+    draw (n - 1);
+
+    for (i = 0; i < n; i++)
+    {
+        printf("#");
+    }
+    printf("\n");
+}
+```
+The function draw is reiterated by calling upon itself, drawing less and less blocks on each iteration to finally create a pyramid.
