@@ -97,3 +97,23 @@ float average(int array[])
 ```
 First, the size of the array (n) is declared as a global variable. The function *main* will take in the scores input from the user, pass it as an input to *average*, then print the output from the function *average*. The function *average* takes the array (of scores) as an input and returns a float (average score) as the output. By implementing the global variable n, the size of the array can be changed dynamically throughout the whole code./
 When the function *average* is run, the array[] is replaced by the score[] obtained from the user. This means that as the function *main* is running, when it reaches the line of printing, it jumps to the function *average* to obtain the value of average score.
+
+### Command Line Argument
+```
+#include <cs50.h>
+#include <stdio.h>
+
+int main(int argc, string argv[])
+{
+    if (argc == 2)
+    {
+        printf("hello, %s\n", argv[1]);
+    }
+    else
+    {
+        printf("hello, world\n");
+    }
+}
+```
+*argc* is the number of command line arguments (including ./"program name") and *argv* is the array of characters passed as the argument on the command line.\
+For example, executing ./greet David will result in the porgram printing "hello, David" since argv[0] is ./greet and argv[1] is David.
