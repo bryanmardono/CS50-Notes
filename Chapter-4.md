@@ -28,4 +28,5 @@ Using more digits, we can count up to 256 numbers (0-255).\
 31 is represented by 1F\
 255 is represented by FF (16x15 + 1x15)\
 ```
-We can see the correlation between binary and hexadecimal. 1 digit of hexadecimal takes 4 bits of memory, so 2 digits of hexadecimal can be represented using 1 byte (8 bits of memory).
+We can see the correlation between binary and hexadecimal. 1 digit of hexadecimal takes 4 bits of memory, so 2 digits of hexadecimal can be represented using 1 byte (8 bits of memory).\
+By convention, to prevent confusion between hexadecimal and normal decimals, we prefix hexadecimals with ``` 0x ```.
