@@ -30,3 +30,15 @@ Using more digits, we can count up to 256 numbers (0-255).\
 ```
 We can see the correlation between binary and hexadecimal. 1 digit of hexadecimal takes 4 bits of memory, so 2 digits of hexadecimal can be represented using 1 byte (8 bits of memory).\
 By convention, to prevent confusion between hexadecimal and normal decimals, we prefix hexadecimals with ``` 0x ```.
+
+### Pointers
+A pointer is a variable that contains on the memory address of some value.
+
+```
+int n = 50;
+int *p = &n;
+```
+```p``` contains the an integer that is the address of ```n```. The integer p can be recalled using %p (for pointer).
+
+### Strings
+Interestingly, string is actually just a pointer that stores the address of the first element in an array of characters.
